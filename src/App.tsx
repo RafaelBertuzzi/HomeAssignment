@@ -17,6 +17,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import StorybookUIRoot from '../.storybook/';
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -111,4 +113,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default process.env.STORYBOOK_ENABLED === 'true' ? StorybookUIRoot : App;
