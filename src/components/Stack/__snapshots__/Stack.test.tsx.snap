@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: Stack should renders children horizontal 1`] = `
+exports[`Component: Stack should render children horizontal 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
@@ -34,7 +34,7 @@ exports[`Component: Stack should renders children horizontal 1`] = `
 </RNCSafeAreaProvider>
 `;
 
-exports[`Component: Stack should renders children vertical 1`] = `
+exports[`Component: Stack should render children vertical 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
@@ -48,11 +48,7 @@ exports[`Component: Stack should renders children vertical 1`] = `
 >
   <View
     dataSet={{}}
-    style={
-      {
-        "flexDirection": "row",
-      }
-    }
+    style={{}}
   >
     <Text>
       Stack 1
@@ -68,7 +64,7 @@ exports[`Component: Stack should renders children vertical 1`] = `
 </RNCSafeAreaProvider>
 `;
 
-exports[`Component: Stack should renders space 1`] = `
+exports[`Component: Stack should render space 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
@@ -82,11 +78,7 @@ exports[`Component: Stack should renders space 1`] = `
 >
   <View
     dataSet={{}}
-    style={
-      {
-        "flexDirection": "row",
-      }
-    }
+    style={{}}
   >
     <Text>
       Stack 1
@@ -95,7 +87,7 @@ exports[`Component: Stack should renders space 1`] = `
       dataSet={{}}
       style={
         {
-          "width": 16,
+          "height": 16,
         }
       }
     />

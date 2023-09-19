@@ -1,16 +1,19 @@
 import React from 'react';
-import { Header } from 'react-native/Libraries/NewAppScreen';
 
 import { LayoutProvider } from '@components/LayoutProvider';
+import { ContactList } from '@screens';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-import StorybookUIRoot from '../.storybook/';
+const queryClient = new QueryClient();
 
 function App(): JSX.Element {
   return (
     <LayoutProvider>
-      <Header />
+      <QueryClientProvider client={queryClient}>
+        <ContactList />
+      </QueryClientProvider>
     </LayoutProvider>
   );
 }
 
-export default process.env.STORYBOOK_ENABLED === 'true' ? StorybookUIRoot : App;
+export default App;

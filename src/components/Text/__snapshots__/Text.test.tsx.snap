@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: Text should renders text 1`] = `
+exports[`Component: Text should render text 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
