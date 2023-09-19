@@ -3,7 +3,7 @@ import Contacts, { Contact } from 'react-native-contacts';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-class ContactService {
+class ContactListService {
   async getAll() {
     let permission = 'granted';
     if (Platform.OS === 'android') {
@@ -34,4 +34,4 @@ class ContactService {
   }
 }
 
-export default new ContactService();
+export default new ContactListService();

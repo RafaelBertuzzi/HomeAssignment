@@ -1,6 +1,8 @@
+import { useMemo } from 'react';
 import { RefreshControl } from 'react-native';
 
 import { Divider, FlatList, Stack, Text } from '@components';
+import { useAppSelector } from '@redux/hooks';
 
 import { ContactCard } from '../ContactCard';
 
@@ -12,6 +14,22 @@ export const ContactFlatList = ({
   isRefetching,
   refetch,
 }: IContactFlatListProps) => {
+  const { favorited } = useAppSelector((state) => state.contacts);
+
+  const favoritedIds = useMemo(
+    () => favorited.map((item) => item.recordID),
+    [favorited],
+  );
+
+  const contacts = useMemo(() => {
+    return [
+      ...favorited,
+      ...data.filter((item) => {
+        return !favoritedIds.includes(item.recordID);
+      }),
+    ];
+  }, [favorited, data]);
+
   if (isLoading) {
     return <Text title="Loading..." />;
   }
@@ -19,10 +37,14 @@ export const ContactFlatList = ({
   return (
     <>
       <FlatList
-        data={data}
+        data={contacts}
         ItemSeparatorComponent={() => <Divider my={4} />}
         renderItem={({ item }) => (
-          <ContactCard name={`${item.givenName} ${item.familyName}`} />
+          <ContactCard
+            id={item.recordID}
+            name={`${item.givenName} ${item.familyName}`}
+            isFavorited={favoritedIds.includes(item.recordID)}
+          />
         )}
         refreshControl={
           <RefreshControl refreshing={isRefetching} onRefresh={refetch} />
