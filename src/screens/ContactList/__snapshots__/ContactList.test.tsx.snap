@@ -56,7 +56,7 @@ exports[`ContactList Screen should render ContactList Screen 1`] = `
             }
           }
         >
-          Contacts List
+          Contact List
         </Text>
         <View
           dataSet={{}}

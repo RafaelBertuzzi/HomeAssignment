@@ -48,7 +48,7 @@ exports[`ContactList Component: Header should render ContactList Header 1`] = `
           }
         }
       >
-        Contacts List
+        Contact List
       </Text>
       <View
         dataSet={{}}
