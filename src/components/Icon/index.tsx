@@ -6,6 +6,7 @@ const ICON_IMAGES: TIconNames = {
   search: require('../../assets/icons/search.png'),
   'star-outline': require('../../assets/icons/star-outline.png'),
   'star-solid': require('../../assets/icons/star-solid.png'),
+  'left-arrow': require('../../assets/icons/left-arrow.png'),
 };
 
 export const Icon = ({ name }: IIconProps) => {

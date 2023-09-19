@@ -4,12 +4,9 @@ exports[`Component: Stack should render children horizontal 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
-    [
-      {
-        "flex": 1,
-      },
-      undefined,
-    ]
+    {
+      "flex": 1,
+    }
   }
 >
   <View
@@ -38,12 +35,9 @@ exports[`Component: Stack should render children vertical 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
-    [
-      {
-        "flex": 1,
-      },
-      undefined,
-    ]
+    {
+      "flex": 1,
+    }
   }
 >
   <View
@@ -68,12 +62,9 @@ exports[`Component: Stack should render space 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
-    [
-      {
-        "flex": 1,
-      },
-      undefined,
-    ]
+    {
+      "flex": 1,
+    }
   }
 >
   <View

@@ -41,6 +41,7 @@ export const ContactFlatList = ({
         ItemSeparatorComponent={() => <Divider my={4} />}
         renderItem={({ item }) => (
           <ContactCard
+            id={item.recordID}
             name={`${item.givenName} ${item.familyName}`}
             isFavorited={favoritedIds.includes(item.recordID)}
           />

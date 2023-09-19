@@ -1,4 +1,4 @@
-import { Divider, IconButton, Stack, Text } from '@components';
+import { Divider, Stack, Text } from '@components';
 
 export const Header = () => {
   return (
@@ -12,8 +12,6 @@ export const Header = () => {
         direction={'row'}
       >
         <Text title="Contact List" fontSize="xl" />
-
-        <IconButton icon="search" onPress={() => {}} />
       </Stack>
       <Divider />
     </Stack>

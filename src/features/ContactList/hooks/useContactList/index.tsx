@@ -3,7 +3,7 @@ import { Contact } from 'react-native-contacts';
 
 import { useQuery } from '@tanstack/react-query';
 
-import ContactService from '../../services/ContactService';
+import ContactListService from '../../services/ContactListService';
 
 export const useContactList = () => {
   const [isLoadingSaved, setIsLoadingSaved] = useState(false);
@@ -14,13 +14,13 @@ export const useContactList = () => {
     data,
     refetch,
     isRefetching,
-  } = useQuery(['contact-list'], () => ContactService.getAll());
+  } = useQuery(['contact-list'], () => ContactListService.getAll());
 
   useEffect(() => {
     if (data) {
       (async () => {
         setContacts(data);
-        await ContactService.saveAll(data);
+        await ContactListService.saveAll(data);
       })();
     }
   }, [data]);
@@ -29,7 +29,7 @@ export const useContactList = () => {
     if (isError) {
       (async () => {
         setIsLoadingSaved(true);
-        const savedData = await ContactService.getAllSaved();
+        const savedData = await ContactListService.getAllSaved();
 
         setContacts(savedData);
         setIsLoadingSaved(false);
