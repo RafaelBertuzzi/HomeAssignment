@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Divider should render divider 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    aria-orientation="horizontal"
+    dataSet={{}}
+    style={
+      {
+        "backgroundColor": "#d4d4d4",
+        "height": 1,
+        "width": "100%",
+      }
+    }
+    thickness="1"
+  />
+</RNCSafeAreaProvider>
+`;

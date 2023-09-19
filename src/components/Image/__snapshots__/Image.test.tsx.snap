@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Image should render image 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    accessibilityLabel="search"
+    alt="search"
+    dataSet={{}}
+    onError={[Function]}
+    source={
+      {
+        "testUri": "../../../src/assets/icons/search.png",
+      }
+    }
+    style={
+      {
+        "height": 24,
+        "maxWidth": "100%",
+        "width": 24,
+      }
+    }
+  />
+</RNCSafeAreaProvider>
+`;
