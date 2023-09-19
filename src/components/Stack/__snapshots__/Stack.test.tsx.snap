@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Stack should renders children horizontal 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "flexDirection": "column",
+      }
+    }
+  >
+    <Text>
+      Stack 1
+    </Text>
+    <View
+      dataSet={{}}
+      style={{}}
+    />
+    <Text>
+      Stack 2
+    </Text>
+  </View>
+</RNCSafeAreaProvider>
+`;
+
+exports[`Component: Stack should renders children vertical 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text>
+      Stack 1
+    </Text>
+    <View
+      dataSet={{}}
+      style={{}}
+    />
+    <Text>
+      Stack 2
+    </Text>
+  </View>
+</RNCSafeAreaProvider>
+`;
+
+exports[`Component: Stack should renders space 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text>
+      Stack 1
+    </Text>
+    <View
+      dataSet={{}}
+      style={
+        {
+          "width": 16,
+        }
+      }
+    />
+    <Text>
+      Stack 2
+    </Text>
+  </View>
+</RNCSafeAreaProvider>
+`;
