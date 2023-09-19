@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Icon should render icon 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    accessibilityLabel="star-solid"
+    alt="star-solid"
+    dataSet={{}}
+    onError={[Function]}
+    source={
+      {
+        "testUri": "../../../src/assets/icons/star-solid.png",
+      }
+    }
+    style={
+      {
+        "height": 24,
+        "maxWidth": "100%",
+        "width": 24,
+      }
+    }
+  />
+</RNCSafeAreaProvider>
+`;

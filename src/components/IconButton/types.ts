@@ -1,12 +1,6 @@
-import { ImageSourcePropType } from 'react-native';
-
-type Icon = 'search' | 'star-outline' | 'star-solid';
+import { TIcon } from '@components/Icon/types';
 
 export interface IIconButtonProps {
-  icon: Icon;
+  icon: TIcon;
   onPress: () => void;
 }
-
-export type TIconNames = {
-  [key in Icon]: ImageSourcePropType;
-};

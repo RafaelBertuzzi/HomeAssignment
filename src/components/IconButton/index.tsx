@@ -1,17 +1,11 @@
-import { Button, Image } from 'native-base';
+import { Button, Icon } from '@components';
 
-import { IIconButtonProps, TIconNames } from './types';
-
-const ICON_IMAGES: TIconNames = {
-  search: require('../../assets/icons/search.png'),
-  'star-outline': require('../../assets/icons/star-outline.png'),
-  'star-solid': require('../../assets/icons/star-solid.png'),
-};
+import { IIconButtonProps } from './types';
 
 export const IconButton = ({ icon, ...rest }: IIconButtonProps) => {
   return (
     <Button variant={'unstyled'} {...rest}>
-      <Image size={6} source={ICON_IMAGES[icon]} alt={icon} />
+      <Icon name={icon} />
     </Button>
   );
 };
